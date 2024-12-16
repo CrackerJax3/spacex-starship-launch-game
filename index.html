@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SpaceX Starship Lander Game (Unofficial)</title>
 	<style>
 		* {
@@ -24,6 +24,29 @@
 </head>
 
 <body>
+	<header>
+		<h1>SpaceX Starship Lander Game</h1>
+		<p>Launch the SpaceX Starship, deploy Starlink satellites, and land both stages safely!</p>
+	</header>
+
+	<main>
+		<canvas id="gameCanvas"></canvas>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 SpaceX Starship Lander Game. All rights reserved.</p>
+		<p>Try it live: <a href="https://spacex-starship-lander.pages.dev/" target="_blank">Live Demo</a></p>
+	</footer>
+
+	<script>
+		const canvas = document.getElementById('gameCanvas');
+		function resizeCanvas() {
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+		}
+		window.addEventListener('resize', resizeCanvas);
+		resizeCanvas();
+	</script>
 </body>
 
 </html>
